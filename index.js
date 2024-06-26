@@ -61,7 +61,7 @@ for (const file of eventFiles) {
 console.log(table.table(data, { header: { alignment: 'center', content: 'Events' }, border: table.getBorderCharacters('norc') }));
 
 
-client.login(config.token);
+client.login(process.env.token);
 
 const { readingPhoto, sendChannelLlog } = require('./readImage.js');
 
